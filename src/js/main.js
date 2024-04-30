@@ -1,4 +1,3 @@
-
 var radio = document.querySelector('.manual-btn')
 var cont = 1
 
@@ -8,12 +7,19 @@ setInterval(() => {
     proximaImg()
 }, 5000)
 
-function proximaImg(){
+function proximaImg() {
     cont++
 
-    if(cont > 3){
-        cont = 1 
+    if (cont > 3) {
+        cont = 1
     }
 
-    document.getElementById('radio'+cont).checked = true
+    document.getElementById('radio' + cont).checked = true
 }
+// Hamburguer
+
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
